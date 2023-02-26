@@ -45,7 +45,7 @@ body
 {
     position: fixed;
     width: 50%;
-    height: 500px;
+    height: 600px;
     top: 45%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -165,4 +165,114 @@ body
     width: 80%;
     margin: auto;
     margin-top: 10%;
+}
+
+#socials
+{
+    width: 60%;
+    margin: auto;
+    margin-top: 3%;
+}
+
+#socials ul
+{
+    margin: auto;
+    width: 100%;
+}
+
+#socials li
+{
+    list-style: none;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+#socials li a
+{
+    display: flex;
+    align-items: center;
+    padding: 10px 0px;
+    width: 187px;
+    box-shadow: inset -2px -2px 0px 0px #666666, inset 2px 2px 0px 0px #eeeeee;
+    color: #333333;
+    text-decoration: none;
+}
+
+#socials li a:hover
+{
+    background-color: #a0a0a0;
+}
+
+#socials li a img
+{
+    width: 50px;
+    box-shadow: inset -2px -2px 0px 0px #666666, inset 2px 2px 0px 0px #eeeeee;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+#socials li h3
+{
+    margin-left: 50px;
+}
+
+@media only screen and (max-width: 2180px) {
+
+#socials
+{
+    width: 80%;
+}
+
+}
+
+@media only screen and (max-width: 1640px) {
+
+    #socials
+    {
+        width: 90%;
+    }
+    
+}
+
+@media only screen and (max-width: 1460px) {
+
+    #socials
+    {
+        width: 100%;
+    }
+    
+}
+
+@media only screen and (max-width: 1310px) {
+
+    #folder
+    {
+        width: 60%;
+        height: 800px;
+    }
+}
+
+@media only screen and (max-width: 1010px) {
+
+    #folder
+    {
+        width: 80%;
+        height: 900px;
+        top: 50%;
+    }
+}
+
+@media only screen and (max-width: 760px) {
+
+    #socials li
+    {
+        flex-direction: column;
+    }
+
+    #socials li h3
+    {
+        margin: 10px 0px;
+    }
 }

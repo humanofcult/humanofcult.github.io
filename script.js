@@ -1,6 +1,7 @@
 document.getElementById("folder").style.display = "none";
 document.getElementById("files").style.display = "block";
 document.getElementById("aboutMe").style.display = "none";
+document.getElementById("socials").style.display = "none";
 document.getElementById("lowerPart").style.display = "flex";
 
 
@@ -15,6 +16,7 @@ function filesClose()
     document.getElementById("files").style.display = "block";
     document.getElementById("folder").style.display = "none";
     document.getElementById("aboutMe").style.display = "none";
+    document.getElementById("socials").style.display = "none";
     document.getElementById("lowerPart").style.display = "flex";
 }
 
@@ -23,6 +25,7 @@ function back()
     if(document.getElementById("lowerPart").style.display == "none")
     {
         document.getElementById("aboutMe").style.display = "none";
+        document.getElementById("socials").style.display = "none";
         document.getElementById("lowerPart").style.display = "flex";
     }
     else
@@ -35,6 +38,12 @@ function back()
 function aboutMe()
 {
     document.getElementById("aboutMe").style.display = "block";
+    document.getElementById("lowerPart").style.display = "none";
+}
+
+function socials()
+{
+    document.getElementById("socials").style.display = "block";
     document.getElementById("lowerPart").style.display = "none";
 }
 
